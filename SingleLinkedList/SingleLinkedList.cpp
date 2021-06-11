@@ -87,6 +87,7 @@ class SingleLinkedList {
         // Возвращает ссылку на самого себя
         // Инкремент итератора, не указывающего на существующий элемент списка, приводит к неопределённому поведению
         BasicIterator& operator++() noexcept {
+            assert(node_ != nullptr);
             node_ = node_->next_node;
             return *this;
         }
@@ -96,6 +97,7 @@ class SingleLinkedList {
         // Инкремент итератора, не указывающего на существующий элемент списка,
         // приводит к неопределённому поведению
         BasicIterator operator++(int) noexcept {
+            assert(node_ != nullptr);
             auto old_value(*this); // Сохраняем прежнее значение объекта для последующего возврата
             ++(*this); // используем логику префиксной формы инкремента
             return old_value;
@@ -105,6 +107,7 @@ class SingleLinkedList {
         // Вызов этого оператора у итератора, не указывающего на существующий элемент списка,
         // приводит к неопределённому поведению
         [[nodiscard]] reference operator*() const noexcept {
+            assert(node_ != nullptr);
             return node_->value;
         }
 
@@ -112,6 +115,7 @@ class SingleLinkedList {
         // Вызов этого оператора у итератора, не указывающего на существующий элемент списка,
         // приводит к неопределённому поведению
         [[nodiscard]] pointer operator->() const noexcept {
+            assert(node_ != nullptr);
             return &node_->value;
         }
 
@@ -262,8 +266,7 @@ public:
      */
     Iterator InsertAfter(ConstIterator pos, const Type& value) {
         // Заглушка. Реализуйте метод самостоятельно
-        //        head_.next_node = new Node(value, head_.next_node);
-
+        assert(pos.node_ != nullptr);
         Node* new_node = new Node(value, pos.node_->next_node);
         pos.node_->next_node = new_node;
         ++size_;
@@ -276,6 +279,7 @@ public:
      */
     Iterator EraseAfter(ConstIterator pos) noexcept {
         // Заглушка. Реализуйте метод самостоятельно
+        assert(pos.node_ != nullptr);
         Node* next_next_node = pos.node_->next_node->next_node;
         delete pos.node_->next_node;
         --size_;
