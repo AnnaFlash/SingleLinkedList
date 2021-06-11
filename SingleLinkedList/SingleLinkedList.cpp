@@ -50,7 +50,6 @@ class SingleLinkedList {
         // При ValueType, совпадающем с Type, играет роль копирующего конструктора
         // При ValueType, совпадающем с const Type, играет роль конвертирующего конструктора
         BasicIterator(const BasicIterator<Type>& other) noexcept {
-            // Реализуйте конструктор самостоятельно
             node_ = other.node_;
         }
 
@@ -203,7 +202,6 @@ public:
         size_++;
     }
     void PopFront() noexcept {
-        // Реализуйте метод самостоятельно
         if (size_ != 0) {
             Node p = head_;
             head_.next_node = p.next_node->next_node;
@@ -241,7 +239,6 @@ public:
     }
     // Обменивает содержимое списков за время O(1)
     void swap(SingleLinkedList& other) noexcept {
-        // Реализуйте обмен содержимого списков самостоятельно
         std::swap(head_.next_node, other.head_.next_node);
         std::swap(size_, other.size_);
     }
@@ -250,11 +247,7 @@ public:
         if (head_.next_node != rhs.head_.next_node)
         {
             SingleLinkedList temp(rhs);
-           swap(temp);
-           /* for (auto it = temp.begin(); it != temp.end(); ++it)
-            {
-                PushBack(*it);
-            }*/
+            swap(temp);
         }
         return *this;
 
@@ -265,7 +258,6 @@ public:
      * Если при создании элемента будет выброшено исключение, список останется в прежнем состоянии
      */
     Iterator InsertAfter(ConstIterator pos, const Type& value) {
-        // Заглушка. Реализуйте метод самостоятельно
         assert(pos.node_ != nullptr);
         Node* new_node = new Node(value, pos.node_->next_node);
         pos.node_->next_node = new_node;
@@ -278,7 +270,6 @@ public:
      * Возвращает итератор на элемент, следующий за удалённым
      */
     Iterator EraseAfter(ConstIterator pos) noexcept {
-        // Заглушка. Реализуйте метод самостоятельно
         assert(pos.node_ != nullptr);
         Node* next_next_node = pos.node_->next_node->next_node;
         delete pos.node_->next_node;
@@ -291,7 +282,6 @@ private:
     // Фиктивный узел, используется для вставки "перед первым элементом"
     Node head_;
     size_t size_ = 0;
-    // BasicIterator<value_type> end_;
 };
 
 template <typename Type>
