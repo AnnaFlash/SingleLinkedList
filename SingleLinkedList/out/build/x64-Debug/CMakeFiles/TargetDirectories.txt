@@ -1,0 +1,3 @@
+C:/Users/Anna/source/repos/SingleLinkedList/SingleLinkedList/out/build/x64-Debug/CMakeFiles/SingleLinkedList.dir
+C:/Users/Anna/source/repos/SingleLinkedList/SingleLinkedList/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Anna/source/repos/SingleLinkedList/SingleLinkedList/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

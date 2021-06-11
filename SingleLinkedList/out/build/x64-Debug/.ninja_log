@@ -1,0 +1,22 @@
+# ninja log v5
+1	32	0	clean	b049eaf95b698d8c
+1	1264	645141201	CMakeFiles/SingleLinkedList.dir/SingleLinkedList.cpp.obj	9a232ef887479de2
+1266	2889	645141203	SingleLinkedList.exe	e4eee3f2ae7dbff9
+1	50	0	clean	b049eaf95b698d8c
+2	1715	645141310	CMakeFiles/SingleLinkedList.dir/SingleLinkedList.cpp.obj	9a232ef887479de2
+1717	2818	645141311	SingleLinkedList.exe	e4eee3f2ae7dbff9
+2	1477	645141332	CMakeFiles/SingleLinkedList.dir/SingleLinkedList.cpp.obj	9a232ef887479de2
+1489	2489	645141333	SingleLinkedList.exe	e4eee3f2ae7dbff9
+0	29	0	clean	b049eaf95b698d8c
+0	25	0	clean	b049eaf95b698d8c
+1	25	0	clean	b049eaf95b698d8c
+1	29	0	clean	b049eaf95b698d8c
+0	27	0	clean	b049eaf95b698d8c
+1	1320	645141567	CMakeFiles/SingleLinkedList.dir/SingleLinkedList.cpp.obj	9a232ef887479de2
+1323	2106	645141568	SingleLinkedList.exe	e4eee3f2ae7dbff9
+1	1715	645141595	CMakeFiles/SingleLinkedList.dir/SingleLinkedList.cpp.obj	9a232ef887479de2
+1717	2605	645141596	SingleLinkedList.exe	e4eee3f2ae7dbff9
+1	1828	645141929	CMakeFiles/SingleLinkedList.dir/SingleLinkedList.cpp.obj	9a232ef887479de2
+1830	2759	645141930	SingleLinkedList.exe	e4eee3f2ae7dbff9
+1	2041	645141980	CMakeFiles/SingleLinkedList.dir/SingleLinkedList.cpp.obj	9a232ef887479de2
+2043	3285	645141981	SingleLinkedList.exe	e4eee3f2ae7dbff9
